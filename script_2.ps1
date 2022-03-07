@@ -3,7 +3,7 @@ while (($param -ne 'Auto') -and ($param -ne 'Manual')) {
     $param = Read-Host -Prompt 'Enter Auto or Manual: '
 }
 $info = Read-Host -Prompt 'Do you want to list additional info? (enter YES or NO): '
-while (($param -ne 'YES') -and ($param -ne 'NO')) {
+while (($info -ne 'YES') -and ($info -ne 'NO')) {
     $info = Read-Host -Prompt 'Do you want to list additional info? (enter YES or NO): '
 }
 if ($info -eq 'YES') {
