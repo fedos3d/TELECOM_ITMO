@@ -7,7 +7,7 @@ while (($param -ne 'YES') -and ($param -ne 'NO')) {
     $info = Read-Host -Prompt 'Do you want to list additional info? (enter YES or NO): '
 }
 if ($info -eq 'YES') {
-     Get-NetAdapter | select InterfaceDescription, Status, FullDuplex
+     Get-NetAdapter | select InterfaceDescription, Status, FullDuplex, Speed
 }
 if ($param -eq 'Auto') {
     netsh interface ipv4 set address name="Ethernet0" source=dhcp
